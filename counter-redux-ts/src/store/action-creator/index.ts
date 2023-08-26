@@ -11,11 +11,10 @@ export const incrementCounter =
 export const decrementCounter =
   (value: number) => (dispatch: Dispatch<Actions>) =>
     dispatch({
-      type: ActionType.INCREMENT,
+      type: ActionType.DECREMENT,
       payload: value,
     });
-export const resetCounter = (value: number) => (dispatch: Dispatch<Actions>) =>
+export const resetCounter = () => (dispatch: Dispatch<Actions>) =>
   dispatch({
-    type: ActionType.INCREMENT,
-    payload: value,
+    type: ActionType.RESET,
   });
